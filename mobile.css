@@ -1,0 +1,57 @@
+.header{
+    background-color: rgb(202, 57, 118, 0,74);
+    height: 80px;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .titulo{
+    font-size: 25px;
+    font-family:franklin gothic medium;
+    color:black;
+    text-shadow: 10px 10px 20px rgb(126, 77, 77);
+   }
+   table {
+        width: 500px;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 10px whitesmoke;
+}
+.ingreso { 
+   
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start ;
+    font-size: 25px;
+    font-family:franklin gothic medium;
+    color:black;
+    text-shadow: 10px 10px 20px white; }
+  
+    .agregar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 450px 10px;
+        height: 290px;
+        width: 350px;
+        border-radius: 15px;
+        box-shadow: 0 0 15px 10px whitesmoke;
+    }
+
+    
+    .cubo1 img{
+        width: 500px;
+    }
+    .cubo1 {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    background-color: rgba(179, 78, 124, 0.74);
+    margin: 1px;
+   
+ }
+.cubo2 img{     
+    width: 60px;
+    height: 60px;
+}
