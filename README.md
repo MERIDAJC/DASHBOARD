@@ -1,4 +1,6 @@
-#DASHBOARD
+
+
+# DASHBOARD
 ### SE REALIZA EL CONSUMO DE UNA API 
 
 - Aplicacion para la consula de datos de una APi
@@ -8,7 +10,7 @@
 - Consumo de chartjs
 
 
-####Javascript
+####  Javascript 
 
 
 function llamarapi(){
@@ -20,6 +22,8 @@ function llamarapi(){
 
 
 `<link>` : <https://meridajc.github.io/DASHBOARD/>
+
+
 
 
 
