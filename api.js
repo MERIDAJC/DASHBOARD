@@ -55,7 +55,7 @@ function datosTabla(datos){
                <td>${elemento.username}</td> 
                <td>${elemento.email}</td> `
          columnas.addEventListener(`click`, function(){ 
-            window.location.href =`./index.html?id=${elemento.id}`                  
+            window.location.href =`./card.html?id=${elemento.id}`                  
                       
            
             
