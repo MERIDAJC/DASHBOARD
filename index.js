@@ -1,36 +1,9 @@
 
-/*
-const aplicacion = document.querySelector(".captura")
-const aplicacion2 = document.querySelector(".captura2")
+import {agregarNuevo,url} from "./Nuempl.js"
 
-const url ="https://jsonplaceholder.typicode.com/users"
+document.getElementById("agregarNuevo").addEventListener("click",agregarNuevo)
 
-
-fetch(url)
-.then(respuesta => respuesta.json())
-.then(datos => {
-      datos.forEach(usuarios => {
-        console.log(usuarios.id);
-        console.log(usuarios.name);
-
-        const tabla = document.createElement("tr")
-        tabla.innerHTML = usuarios.id
-        //tabla.innerHTML = usuarios.name
-
-        aplicacion.appendChild(tabla)
-        aplicacion2.appendChild(tabla)
-
-
-
-      });
-
-}).catch(err =>console.log(err))*/
-
-
-
-
-
-const url ="https://jsonplaceholder.typicode.com/users"
+//const url ="https://jsonplaceholder.typicode.com/users"
 const captura = document.querySelector("#captura")
 
 
@@ -64,34 +37,4 @@ function datosTabla(datos){
     });
     
 }       
-       
-   function agregarNuevo() {
- 
-  console.log("Entro a agregarUsuario");
- 
-  let nuevoUs = new FormData();
-  nuevoUs.append("nombre", document.getElementById("nombre").value);
-  nuevoUs.append("apellido", document.getElementById("apellido").value);
-  nuevoUs.append("email", document.getElementById("email").value);
-
-  fetch(url, {method: "POST", body: nuevoUs,
-  })
-    .then((response) => response.json()) 
-    .then((result) => {
-      console.log(result);
-      limpiarFormulario();
-      //llamarapi();
-    }) 
-    .catch((error) => {
-      console.log("Error detectado!" + error);
-    }); 
-   }
    
-function limpiarFormulario() {
-  
-  document.getElementById("nombre").value = "";
-  document.getElementById("apellido").value = "";
-  document.getElementById("email").value = "";
-}
-   
-
